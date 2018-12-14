@@ -106,7 +106,7 @@ public class ValueLineChart extends BaseChart {
      * @param context The Context the view is running in, through which it can
      *                access the current theme, resources, etc.
      * @param attrs   The attributes of the XML tag that is inflating the view.
-     * @see #View(android.content.Context, android.util.AttributeSet, int)
+     * @see #(android.content.Context, android.util.AttributeSet, int)
      */
     public ValueLineChart(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -1367,8 +1367,8 @@ public class ValueLineChart extends BaseChart {
                 } else {
                     // if first point bigger than touched x select first
                     if (i == 0 && pointX > _X) {
-                        mFocusedPoint = series.get(i);
-                        focusedPointOrder = i;
+                        /*mFocusedPoint = series.get(i);
+                        focusedPointOrder = i;*/
                         break;
                     } 
                     // check if we reached the last. if --> (true) use last point

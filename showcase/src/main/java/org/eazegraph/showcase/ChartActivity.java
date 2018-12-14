@@ -1,27 +1,23 @@
 package org.eazegraph.showcase;
 
-import android.app.Activity;
-import android.support.v7.app.ActionBarActivity;
-import android.support.v7.app.ActionBar;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.content.Context;
-import android.os.Build;
 import android.os.Bundle;
-import android.view.Gravity;
-import android.view.LayoutInflater;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
-import android.support.v4.widget.DrawerLayout;
-import android.widget.ArrayAdapter;
-import android.widget.TextView;
 
-import org.eazegraph.showcase.fragments.*;
+import org.eazegraph.showcase.fragments.BarChartFragment;
+import org.eazegraph.showcase.fragments.ChartFragment;
+import org.eazegraph.showcase.fragments.CubicValueLineChartFragment;
+import org.eazegraph.showcase.fragments.PieChartFragment;
+import org.eazegraph.showcase.fragments.StackedBarChartFragment;
+import org.eazegraph.showcase.fragments.ValueLineChartFragment;
+import org.eazegraph.showcase.fragments.VerticalBarChartFragment;
 
 
-public class ChartActivity extends ActionBarActivity
+public class ChartActivity extends AppCompatActivity
         implements NavigationDrawerFragment.NavigationDrawerCallbacks {
 
     /**
